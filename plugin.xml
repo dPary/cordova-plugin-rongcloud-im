@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="io.rong.imlib" version="2.3.7"
+<plugin id="io.rong.imlib" version="2.4.0"
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -95,9 +95,13 @@
     <source-file src="src/android/RongCloudLib.jar" target-dir="libs"/>
     <source-file src="src/android/gson-2.2.4.jar" target-dir="libs"/>
     <source-file src="src/android/armeabi/libRongIMLib.so" target-dir="libs/armeabi"/>
+    <source-file src="src/android/armeabi/libsqlite.so" target-dir="libs/armeabi"/>
     <source-file src="src/android/armeabi-v7a/libRongIMLib.so" target-dir="libs/armeabi-v7a"/>
+	<source-file src="src/android/armeabi-v7a/libsqlite.so" target-dir="libs/armeabi-v7a"/>
     <source-file src="src/android/arm64-v8a/libRongIMLib.so" target-dir="libs/arm64-v8a"/>
+	<source-file src="src/android/arm64-v8a/libsqlite.so" target-dir="libs/arm64-v8a"/>
     <source-file src="src/android/x86/libRongIMLib.so" target-dir="libs/x86"/>
+	<source-file src="src/android/x86/libsqlite.so" target-dir="libs/x86"/>
     <source-file src="src/android/RongCloudLibPlugin.java" target-dir="src/io/rong/cordova"/>
     <source-file src="src/android/common/ErrorCode.java" target-dir="src/io/rong/common"/>
     <source-file src="src/android/common/RongErrorResult.java" target-dir="src/io/rong/common"/>

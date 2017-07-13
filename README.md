@@ -1,3 +1,6 @@
+cordova plugin add https://github.com/dPary/cordova-plugin-rongcloud-im
+
+
 # cordova-plugin-rongcloud-im
 
 This is a [Cordova](http://cordova.apache.org/) plugin for RongCloud IMLib.For more detailed information about underlying business processes  please refer to [Android Development Guide](http://www.rongcloud.cn/docs/cordova.html).

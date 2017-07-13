@@ -57,7 +57,7 @@ import io.rong.message.LocationMessage;
 import io.rong.message.RichContentMessage;
 import io.rong.message.TextMessage;
 import io.rong.message.VoiceMessage;
-import io.rong.push.RongPushInterface;
+//import io.rong.push.RongPushInterface;
 
 public class RongCloudLibPlugin extends CordovaPlugin {
     private final String TAG = "RongCloudLibPlugin";
@@ -201,7 +201,7 @@ public class RongCloudLibPlugin extends CordovaPlugin {
         try {
             String appkey = args.getString(0);
             RongIMClient.init(mContext, appkey);
-            RongPushInterface.init(mContext, appkey);
+            //RongPushInterface.init(mContext, appkey);
             mRongClient = RongIMClient.getInstance();
             mInitialized = true;
             callModuleSuccess(callbackContext);
@@ -1840,7 +1840,7 @@ public class RongCloudLibPlugin extends CordovaPlugin {
             callModuleError(context, new RongException(ErrorCode.NOT_CONNECTED));
             return;
         }
-        RongPushInterface.clearAllNotifications(mContext);
+        //RongPushInterface.clearAllNotifications(mContext);
         callModuleSuccess(context, null);
     }
 
