@@ -18,18 +18,20 @@
 
 @implementation RongCloudLibPlugin
 
-- (instancetype)initWithWebView:(UIWebView*)theWebView {
-  if ([super respondsToSelector:@selector(initWithWebView:)]) {
-    self = [super initWithWebView:theWebView];
-  } else {
-    self = [super init];
-  }
-  
-  if (self) {
+#ifdef __CORDOVA_4_0_0
+- (void)pluginInitialize {
+    
+    //[self initNotifications];
     self.appEventReceiver = [[RongCloudAppEventReceiver alloc] init];
-  }
-  return self;
 }
+#else
+- (CDVPlugin_)initWithWebView:(UIWebView_)theWebView{
+    if (self=[super initWithWebView:theWebView]) {
+        self.appEventReceiver = [[RongCloudAppEventReceiver alloc] init];
+    }
+    return self;
+}
+#endif
 
 - (instancetype)init {
     self = [super init];
